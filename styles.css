@@ -26,7 +26,6 @@ body{
 a{ color:inherit; }
 img{ max-width:100%; display:block; }
 
-/* Header */
 .topo{
   position:sticky; top:0; z-index:1000;
   display:flex; gap:18px; align-items:center; justify-content:space-between;
@@ -76,7 +75,6 @@ img{ max-width:100%; display:block; }
   color: var(--marrom-escuro);
 }
 
-/* Botões */
 .btn{
   display:inline-flex; align-items:center; justify-content:center;
   gap:10px;
@@ -100,7 +98,6 @@ img{ max-width:100%; display:block; }
 .btn.secundario:hover{ transform: translateY(-2px); background: rgba(78,42,30,0.14); }
 .btn.full{ width:100%; }
 
-/* Hero */
 .hero{
   padding: 36px 6% 10px;
   display:grid;
@@ -206,7 +203,6 @@ img{ max-width:100%; display:block; }
 }
 .hero-card li{ margin: 8px 0; }
 
-/* Seções */
 .section-head{
   padding: 0 6%;
   margin-top: 34px;
@@ -218,7 +214,6 @@ img{ max-width:100%; display:block; }
 }
 .section-head p{ color: rgba(42,26,20,0.75); margin-top: 6px; }
 
-/* Catálogo */
 .catalogo{ padding: 10px 0 30px; }
 .filtros{
   padding: 14px 6%;
@@ -310,7 +305,6 @@ img{ max-width:100%; display:block; }
   color: var(--marrom-escuro);
 }
 
-/* Como funciona */
 .como{ padding: 12px 0 30px; }
 .steps{
   padding: 14px 6%;
@@ -334,7 +328,6 @@ img{ max-width:100%; display:block; }
   margin-bottom: 10px;
 }
 
-/* FAQ */
 .faq{ padding: 12px 6% 30px; }
 details{
   background: rgba(255,255,255,0.75);
@@ -347,7 +340,6 @@ details{
 summary{ cursor:pointer; font-weight:900; color: var(--marrom-escuro); }
 details p{ margin-top: 8px; color: rgba(42,26,20,0.76); }
 
-/* Rodapé */
 .rodape{
   margin-top: 10px;
   background: rgba(78,42,30,0.92);
@@ -363,7 +355,6 @@ details p{ margin-top: 8px; color: rgba(42,26,20,0.76); }
 .rodape a{ display:block; margin-top:8px; text-decoration:none; color: rgba(255,255,255,0.88); font-weight:700; }
 .copy{ margin-top: 16px; opacity:.8; }
 
-/* Whats flutuante */
 .whats-float{
   position:fixed; right:18px; bottom:18px;
   width:56px; height:56px;
@@ -378,7 +369,6 @@ details p{ margin-top: 8px; color: rgba(42,26,20,0.76); }
 }
 .whats-float:hover{ transform: translateY(-3px); }
 
-/* Modal */
 .modal{
   position:fixed; inset:0;
   background: rgba(0,0,0,0.45);
@@ -411,7 +401,6 @@ details p{ margin-top: 8px; color: rgba(42,26,20,0.76); }
   font-weight:900;
 }
 
-/* Responsivo */
 @media (max-width: 980px){
   .hero{ grid-template-columns: 1fr; }
   .grid{ grid-template-columns: repeat(2, minmax(0,1fr)); }
@@ -420,12 +409,12 @@ details p{ margin-top: 8px; color: rgba(42,26,20,0.76); }
   .modal-card{ grid-template-columns: 1fr; }
 }
 @media (max-width: 600px){
-  .menu{ display:none; } /* opcional: pode virar menu hamburguer depois */
+  .menu{ display:none; } 
   .grid{ grid-template-columns: 1fr; }
   .cards{ grid-template-columns: 1fr; }
   .busca input{ min-width: 160px; }
 }
-/* Informações do pedido */
+
 .info{ padding: 12px 0 30px; }
 
 .info-grid{
