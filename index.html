@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
+  <title>Doceria Bia Veniti</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+
+<body id="topo">
+  <!-- Topbar -->
+  <header class="topo" aria-label="Topo">
+    <div class="logo">
+      <a href="#topo" class="logo-link">
+        <img src="logobia.png" alt="Logo Doceria Bia Veniti">
+        <div class="logo-texto">
+          <h1>Doceria Bia Veniti</h1>
+          <span>Sob encomenda • Feito com carinho</span>
+        </div>
+      </a>
+    </div>
+
+    <nav class="menu" aria-label="Menu">
+      <a href="#catalogo">Catálogo</a>
+      <a href="#como-funciona">Como funciona</a>
+      <a href="#info-pedido">Informações</a>
+      <a href="#faq">FAQ</a>
+    </nav>
+
+    <div class="contatos">
+      <a href="https://wa.me/5511984100723" target="_blank" class="link-contato">
+        💬 WhatsApp
+      </a>
+      <a href="https://www.instagram.com/doces.biaveniti/" target="_blank" class="link-contato">
+        📸 Instagram
+      </a>
+    </div>
+  </header>
+
+<!-- Hero -->
+<section class="hero">
+  <div class="hero-content">
+    <p class="badge">✨ Doces artesanais sob encomenda</p>
+    <h2>Seu momento doce com a cara da Bia</h2>
+
+    <p>
+      Brigadeiros, pudins, bolos de pote, brownies, bombons e cones trufados.
+      Você escolhe os sabores e a gente prepara do jeitinho perfeito 💗
+    </p>
+
+    <div class="hero-actions">
+      <a class="btn primario" href="#catalogo">Ver catálogo</a>
+      <a class="btn secundario" target="_blank"
+         href="https://api.whatsapp.com/send?phone=5511984100723">
+        Fazer pedido no WhatsApp
+      </a>
+    </div>
+
+    <div class="hero-highlights">
+      <div class="pill">🍫 Chocolates selecionados</div>
+      <div class="pill">🎁 Personalização</div>
+      <div class="pill">📍 São Paulo</div>
+    </div>
+  </div>
+
+  <div class="hero-imagem">
+    <img src="docesilustrativos.png" alt="Doces artesanais Bia Veniti">
+  </div>
+
+  <div class="hero-card">
+    <div class="hero-card-top">
+      <h3>Encomendas</h3>
+      <p>Sem preço fixo — varia por tamanho e personalização.</p>
+    </div>
+    <ul>
+      <li>✅ Monte seu pedido por categoria</li>
+      <li>✅ Escolha sabores e quantidade</li>
+      <li>✅ Confirmamos prazo e entrega</li>
+    </ul>
+    <a class="btn primario full" target="_blank"
+       href="https://api.whatsapp.com/send?phone=5511984100723&text=Oi%20Bia!%20Quero%20um%20or%C3%A7amento%20para%20uma%20encomenda%20😊">
+      Pedir orçamento
+    </a>
+  </div>
+</section>
+
+  <!-- Catálogo -->
+  <section id="catalogo" class="catalogo">
+    <div class="section-head">
+      <h2>Catálogo</h2>
+      <p>Escolha uma categoria e clique em “Pedir” para enviar direto no WhatsApp.</p>
+    </div>
+
+    <div class="filtros">
+      <div class="chips" id="chips"></div>
+
+      <label class="busca">
+        <span>🔎</span>
+        <input id="search" type="text" placeholder="Buscar por nome ou sabor...">
+      </label>
+    </div>
+
+    <div class="grid" id="gridProdutos" aria-live="polite"></div>
+  </section>
+
+  <!-- Como funciona -->
+  <section id="como-funciona" class="como">
+    <div class="section-head">
+      <h2>Como funciona</h2>
+      <p>Processo simples para você encomendar sem complicação.</p>
+    </div>
+
+    <div class="steps">
+      <div class="step">
+        <div class="step-num">1</div>
+        <h3>Escolha os produtos</h3>
+        <p>Navegue pelo catálogo e selecione seus favoritos.</p>
+      </div>
+      <div class="step">
+        <div class="step-num">2</div>
+        <h3>Personalize</h3>
+        <p>Defina sabores, quantidades e detalhes do pedido.</p>
+      </div>
+      <div class="step">
+        <div class="step-num">3</div>
+        <h3>Confirmamos tudo</h3>
+        <p>Você recebe prazo e valor final conforme sua encomenda.</p>
+      </div>
+      <div class="step">
+        <div class="step-num">4</div>
+        <h3>Entrega/retirada</h3>
+        <p>Combinamos a melhor forma de receber seus doces.</p>
+      </div>
+    </div>
+  </section>
+
+<section id="info-pedido" class="info">
+  <div class="section-head">
+    <h2>Informações do pedido</h2>
+    <p>Pagamento, retirada e reserva — tudo bem explicadinho 💗</p>
+  </div>
+
+  <div class="info-grid">
+    <article class="info-card">
+      <h3>Formas de pagamento</h3>
+      <ul>
+        <li>💵 Dinheiro</li>
+        <li>⚡ Pix</li>
+        <li>💳 Cartão de crédito em até <strong>4x</strong> <span class="muted">(consultar taxas)</span></li>
+      </ul>
+    </article>
+
+    <article class="info-card">
+      <h3>Retirada do pedido</h3>
+      <p>
+        Não realizamos entregas. Orientamos o cliente a chamar um <strong>Uber (Carro)</strong> para retirar
+        ou retirar <strong>pessoalmente</strong>.
+      </p>
+    </article>
+
+    <article class="info-card destaque">
+      <h3>Reserva</h3>
+      <p>
+        A reserva será confirmada mediante o pagamento de <strong>30%</strong> do valor total do pedido.
+        O sinal <strong>não será devolvido</strong> em caso de desistência.
+      </p>
+    </article>
+  </div>
+</section>
+
+  <!-- FAQ -->
+  <section id="faq" class="faq">
+    <div class="section-head">
+      <h2>FAQ</h2>
+      <p>Dúvidas comuns sobre encomendas.</p>
+    </div>
+
+    <details>
+  <summary>Quais formas de pagamento vocês aceitam?</summary>
+  <p>Dinheiro, Pix e cartão de crédito em até 4x (consultar taxas).</p>
+</details>
+
+<details>
+  <summary>Vocês fazem entrega?</summary>
+  <p>Não realizamos entregas. Você pode retirar pessoalmente ou chamar um Uber (Carro/Moto) para retirada.</p>
+</details>
+
+<details>
+  <summary>Como funciona a reserva?</summary>
+  <p>A reserva é confirmada mediante pagamento de 30% do valor total. O sinal não é devolvido em caso de desistência.</p>
+</details>
+  </section>
+
+  <!-- Rodapé -->
+  <footer class="rodape">
+    <div class="rodape-grid">
+      <div>
+        <h3>Doceria Bia Veniti</h3>
+        <p>Doces artesanais sob encomenda. Feito com carinho em São Paulo.</p>
+      </div>
+      <div>
+        <h4>Contato</h4>
+        <a target="_blank" href="https://wa.me/5511984100723">WhatsApp</a>
+        <a target="_blank" href="https://www.instagram.com/doces.biaveniti/">Instagram</a>
+      </div>
+      <div>
+        <h4>Catálogo</h4>
+        <a href="#catalogo">Ver produtos</a>
+        <a href="#como-funciona">Como funciona</a>
+      </div>
+    </div>
+    <p class="copy">© <span id="ano"></span> Doceria Bia Veniti • Todos os direitos reservados</p>
+  </footer>
+
+  <!-- Botão WhatsApp flutuante -->
+  <a class="whats-float" target="_blank"
+     href="https://api.whatsapp.com/send?phone=5511984100723&text=Oi%20Bia!%20Quero%20fazer%20uma%20encomenda%20😊"
+     aria-label="Chamar no WhatsApp">
+    💬
+  </a>
+
+  <!-- Modal -->
+  <div class="modal" id="modal" aria-hidden="true">
+    <div class="modal-card" role="dialog" aria-modal="true" aria-label="Detalhes do produto">
+      <button class="modal-close" id="modalClose" aria-label="Fechar">✕</button>
+      <img id="modalImg" alt="" />
+      <div class="modal-body">
+        <h3 id="modalTitle"></h3>
+        <p id="modalDesc"></p>
+        <p class="modal-meta" id="modalMeta"></p>
+        <a class="btn primario full" id="modalWpp" target="_blank">Pedir no WhatsApp</a>
+      </div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
