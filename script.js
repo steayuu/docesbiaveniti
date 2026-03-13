@@ -1,26 +1,21 @@
 const WHATS = "5511984100723";
 
 const produtos = [
-  // Brigadeiros
   { id: 1, nome: "Brigadeiro Tradicional", categoria: "Brigadeiros", tags: ["chocolate", "clássico"], img: "https://i.imgur.com/SSmGEAs.jpeg",
     desc: "Brigadeiro cremoso, feito com chocolate e finalização caprichada. Ideal para festas e lembrancinhas." },
 
   { id: 2, nome: "Brigadeiro Gourmet", categoria: "Brigadeiros", tags: ["gourmet", "premium"], img: "https://i.imgur.com/CkeGnsq.jpeg",
     desc: "Versão especial com ingredientes selecionados e acabamento sofisticado." },
 
-  // Pudins
   { id: 3, nome: "Pudim Cremoso", categoria: "Pudins", tags: ["cremoso", "calda"], img: "https://i.imgur.com/D79uBcs.png",
     desc: "Pudim lisinho, cremoso e com calda brilhante. Sob encomenda no tamanho ideal para você." },
 
-  // Bolos de Pote
   { id: 4, nome: "Bolo de Pote", categoria: "Potes da Felicidade", tags: ["camadas", "recheio"], img: "https://i.imgur.com/kvn4rRP.jpeg",
     desc: "Camadas bem montadas com massa macia e recheio generoso. Você escolhe o sabor." },
 
-  //Pote da Felicidade
   { id: 8, nome: "Pote da Felicidade", categoria: "Potes da Felicidade", tags: ["recheado", "camadas"], img: "https://i.imgur.com/s1DGY0X.jpeg",
     desc: "Pote recheado com camadas generosas de creme, bolo e coberturas deliciosas. Uma verdadeira explosão de sabor." },
 
-  //Bombom no Pote
   { id: 9,
     nome: "Bombom no Pote",
     categoria: "Potes da Felicidade",
@@ -32,15 +27,12 @@ const produtos = [
     desc: "Versão especial de bombom no pote com camadas de creme, chocolate e recheios irresistíveis." 
   },
 
-  // Brownies
   { id: 5, nome: "Brownie", categoria: "Brownies", tags: ["intenso", "macio"], img: "https://i.imgur.com/Js3uWaN.jpeg",
     desc: "Brownie úmido e chocolatudo, com recheio a sua escolha, perfeito para acompanhar um café ou presentear." },
 
-  // Bombons
   { id: 6, nome: "Bombom Trufado", categoria: "Bombons", tags: ["trufa", "recheado"], img: "https://i.imgur.com/gXXrt9a.jpeg",
     desc: "Bombons trufados com recheio cremoso e cobertura irresistível." },
-
-  // Cones
+  
   { id: 7, nome: "Cone Trufado", categoria: "Cones Trufados", tags: ["recheado", "crocante"], img: "https://i.imgur.com/x9G4EI9.jpeg",
     desc: "Cone crocante recheado com trufa cremosa e finalização deliciosa." },
 ];
@@ -174,12 +166,10 @@ if (modal) modal.addEventListener("click", (e) => { if (e.target === modal) fech
 
 document.getElementById("ano").textContent = new Date().getFullYear();
 
-// Sombra no topo ao rolar
 window.addEventListener("scroll", () => {
   const topo = document.querySelector(".topo");
   topo.style.boxShadow = (window.scrollY > 20) ? "0 10px 22px rgba(0,0,0,0.20)" : "none";
 });
 
-// Inicial
 renderChips();
 renderProdutos();
