@@ -9,6 +9,7 @@
 </head>
 
 <body id="topo">
+
   <header class="topo" aria-label="Topo">
     <div class="logo">
       <a href="#topo" class="logo-link">
@@ -225,6 +226,62 @@
       </div>
     </div>
   </div>
+
+  <!-- Admin -->
+<section class="admin-page" id="adminPage">
+  <div class="admin-box">
+    <div class="admin-head">
+      <div>
+        <p class="badge">Área administrativa</p>
+        <h2>Editor do Catálogo</h2>
+        <p>Adicione, edite ou remova produtos da loja.</p>
+      </div>
+
+      <a href="index.html" class="btn secundario">Sair do admin</a>
+    </div>
+
+    <form id="adminForm" class="admin-form">
+      <input type="hidden" id="produtoId">
+
+      <label>
+        Nome do produto
+        <input type="text" id="produtoNome" required>
+      </label>
+
+      <label>
+        Categoria
+        <input type="text" id="produtoCategoria" required placeholder="Ex: Brigadeiros">
+      </label>
+
+      <label>
+        Descrição
+        <textarea id="produtoDesc" required></textarea>
+      </label>
+
+      <label>
+        Tags
+        <input type="text" id="produtoTags" placeholder="Ex: chocolate, gourmet, recheado">
+      </label>
+
+      <label>
+        Imagem do produto
+        <input type="file" id="produtoImagem" accept="image/*">
+      </label>
+
+      <img id="previewImagem" class="preview-img" alt="Prévia da imagem">
+
+      <div class="admin-actions">
+        <button class="btn primario" type="submit">Salvar produto</button>
+        <button class="btn secundario" type="button" id="limparForm">Limpar</button>
+      </div>
+    </form>
+
+    <div class="admin-lista">
+      <h3>Produtos cadastrados</h3>
+      <div id="listaAdminProdutos"></div>
+    </div>
+  </div>
+</section>
 
   <script src="script.js"></script>
 </body>
